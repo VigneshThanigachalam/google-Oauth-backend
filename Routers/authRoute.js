@@ -25,7 +25,7 @@ router.get("/login/failed", (req, res) => {
 });
 router.get("/google/callback",
 	passport.authenticate("google", {
-		successRedirect: "https://demo-google-oauth.netlify.app",
+		successRedirect: "https://delicate-bavarois-4b17d7.netlify.app",
 		failureRedirect: "/login/failed",
 	})
 );
