@@ -29,6 +29,7 @@ router.get("/google/callback",
 		failureRedirect: "/login/failed",
 	})
 );
+console.log(process.env.CLIENT_URL);
 router.get("/google", passport.authenticate("google", ["profile", "email"]));
 
 router.get("/logout", (req, res) => {
