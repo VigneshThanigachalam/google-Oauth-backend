@@ -26,6 +26,9 @@ app.use(cors({
 	credentials: true
 }));
 
+app.get("/", (req, res)=>{
+	res.send("hello world");
+})
 app.use("/auth", router);
 
 const port = process.env.PORT || 8080;
